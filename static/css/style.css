@@ -1,0 +1,161 @@
+.container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.row {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.image-container {
+    flex: 0 0 auto;
+    text-align: center; /* Center the text label */
+    margin: 5px;
+}
+
+.image-container img {
+    max-height: 200px; /* Adjust based on your preference */
+    display: block; /* Ensures the image takes up the entire block */
+    margin: 0 auto; /* Center the image */
+}
+
+.image-container p {
+    color: black; /* Adjust text color as needed */
+    margin-top: 5px; /* Space between image and label */
+    text-align: left;
+}
+
+h2 {
+    color: black; /* Header text color */
+    padding-left: 10px; /* Align with the images */
+}
+
+.star-rating {
+    direction: rtl; /* Right-to-left to allow hover effect from right to left */
+    font-size: 2em;
+    unicode-bidi: bidi-override;
+    display: inline-block;
+}
+
+.star-rating input {
+    display: none;
+}
+
+.star-rating label {
+    color: #ddd; /* Gray color for unselected stars */
+    font-size: 30px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.star-rating label:hover,
+.star-rating label:hover ~ label,
+.star-rating input:checked ~ label {
+    color: #f5eb3b; /* Gold color for selected stars */
+}
+
+body {
+    text-align: center; /* Center content */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+#restaurant-display {
+    margin: 20px auto; /* Center the display */
+}
+
+#restaurant-image {
+    max-width: 80%; /* Maximum width of the image */
+    max-height: 400px; /* Maximum height of the image */
+    width: auto; /* Maintain aspect ratio */
+    height: auto; /* Maintain aspect ratio */
+    border: 1px solid #ddd; /* Optional border */
+    border-radius: 4px; /* Rounded corners */
+    padding: 5px;
+    display: block; /* Ensures block level for centering */
+    margin: 0 auto; /* Center the image */
+}
+
+.label {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Inline CSS for simplicity */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.content {
+    padding: 20px;
+}
+.container {
+    width: 100%; /* Full width */
+    text-align: center; /* Center the container's label */
+    overflow: hidden; /* Hide the overflow */
+}
+
+.row {
+    display: flex; /* Flexbox layout */
+    flex-wrap: nowrap; /* Prevent wrapping */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    padding-bottom: 20px; /* Space at the bottom */
+}
+
+.image-container {
+    display: flex; /* Flex layout for image and text */
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center; /* Center items horizontally in the container */
+    margin: 5px;
+}
+
+.image-container a {
+    text-decoration: none; /* Optional: Removes underline from links */
+    color: inherit; /* Optional: Inherits text color from parent */
+}
+
+.image-container img {
+    max-height: 200px;
+    display: block; /* Display image as a block */
+    margin-bottom: 5px; /* Margin between image and label */
+}
+
+.image-container p {
+    color: black;
+    text-align: center; /* Center the label text */
+}
+/* ... existing styles ... */
+
+.row {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 20px;
+    /* Hide scrollbar for various browsers */
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
+
+.row::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+}
+
+
