@@ -64,7 +64,9 @@ def explore():
 def recommend():
     return render_template('recommend.html')
 
-
+@app.route('/map')
+def map():
+    return render_template('recommend.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
